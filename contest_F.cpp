@@ -11,7 +11,7 @@ long long int test(long long int t){
     else if(t == 2) return 3;
     else if(t % 2 == 1) return 2 * t -1;
     //else if(t % 2 == 0) return test(t/2) + test(t/2 + 1) + (t - 2)/2 - 1;
-    else if(t % 2 == 0) return test(t/2 + 1) * 2 -2;
+    else if(t % 2 == 0) return test(t/2 + 1) * 2 - 2;
 }
 int main(){
     int a;

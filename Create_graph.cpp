@@ -2,7 +2,7 @@
 // Created by defjia on 18-5-6.
 //
 #include <cstdlib>
-#include <cstdio>
+#include <stdio.h>
 #include <queue>
 #define MAXSIZE 100000
 using namespace std;
@@ -62,8 +62,7 @@ int main(){
         tmp->data = graph.node + c;
         if(graph.node[b].head == NULL) graph.node[b].head = tmp;
         else {
-            t = graph.node[b].head;
-            tmp->next = t;
+            tmp->next = graph.node[b].head;
             graph.node[b].head = tmp;
         };
         b = b + c; c = b - c; b -= c;
