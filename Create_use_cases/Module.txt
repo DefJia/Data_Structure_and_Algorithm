@@ -1,0 +1,4 @@
+#ifdef LOCAL
+    freopen("../Create_use_cases/data.in.txt","r",stdin);
+    freopen("../Create_use_cases/data.out.txt","w",stdout);
+#endif

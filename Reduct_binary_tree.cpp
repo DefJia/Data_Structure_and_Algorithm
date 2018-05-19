@@ -1,5 +1,8 @@
 //
 // Created by defjia on 18-4-15.
+// http://online.bit.edu.cn/moodle/mod/programming/view.php?id=68457
+// badcfeg↵
+// bdfgeca
 //
 #include <cstdlib>
 #include <string>

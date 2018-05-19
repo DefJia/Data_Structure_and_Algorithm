@@ -1,0 +1,5 @@
+cmake-build-debug/
+CMAKE.cpp
+CMakeLists.txt
+.idea/
+Create_use_cases/.idea

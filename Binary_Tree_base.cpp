@@ -1,3 +1,7 @@
+//
+// http://online.bit.edu.cn/moodle/mod/programming/view.php?id=68456
+// use case: abcdefg
+//
 #include <cstdlib>
 #include <stdio.h>
 #include <string>
