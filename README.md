@@ -16,7 +16,31 @@
 
 ## 疑问
 
-- memset初始化二维数组
+- 数组作为函数参数
+
+  - 一维数组
+
+    ```c++
+    void test(int * a)
+    test(a);
+    ```
+
+  - 二维数组
+
+    ```c++
+    void test(int *a)
+    test(*a)
+    ```
+
+    而且在test函数内部还需要以一位数组的形式调用a，如a[i*x+j]
+
+- 二元队列
+
+  ```c++
+  queue<pair<int, int>> tmp;
+  tmp.push(make_pair(1,2));
+  int a = tmp.front().first;
+  ```
 
 - 乐学22题的输入问题
 
@@ -36,3 +60,5 @@
 - 定义结构的默认值
 
 - 函数传参，传指针，传地址
+
+- ​

@@ -1,3 +1,13 @@
-a
-    c
-    g
+Preorder: xigamknzy
+Inorder: agikmnxyz
+Postorder: agknmiyzx
+Tree:
+    z
+        y
+x
+            n
+        m
+            k
+    i
+        g
+            a

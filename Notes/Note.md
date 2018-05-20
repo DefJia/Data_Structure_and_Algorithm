@@ -1,4 +1,4 @@
-# 数据结构做题记录
+# 2016级徐特立学院数据结构
 
 [TOC]
 
@@ -72,7 +72,7 @@
 - [Unknown conversion types in this program I'm meant to compile](https://stackoverflow.com/questions/13455020/unknown-conversion-types-in-this-program-im-meant-to-compile)
 - [飞机场调度](http://whtald.blog.163.com/blog/static/40077073200936102352394/)
 
-## 二叉树
+## 树
 
 ###14&15. 二叉树的[建立、基本操作](http://online.bit.edu.cn/moodle/mod/programming/view.php?id=68456)、[还原](http://online.bit.edu.cn/moodle/mod/programming/view.php?id=68457)、遍历
 
@@ -83,8 +83,8 @@
   - 建立一个存储二叉树结点的指针队列tree，初始化时先入队一个结点，data值是raw的队头结点。
   - tree出队一个元素node\*，raw出队两个元素，分别为node\*的左右子树（第二步判断队列是否为空），添加指针后 ，这两个元素入队。
   - 循环，直到两队列均为空。
-- 前序+中序
-- 后序+中序
+-  前序+中序
+-  后序+中序
 
 ####基本操作
 
@@ -113,11 +113,24 @@
 - [阿修罗道的CSDN博客](https://blog.csdn.net/fansongy/article/details/6798278)
 - [yanerhao的CSDN博客](https://blog.csdn.net/yanerhao/article/details/45175943)
 
-## 的
+### 20. 树的建立和基本操作
 
+#### 综述
 
+​	居然在五一假期没做出来，半个月后才想起来补一下。这个题难点主要在于广义表转树，其他还没什么。
 
+​	输入：(a,(b,(c),(d)),(f,(g),(h),(i))) 
 
+####思路
+
+首先，用孩子-兄弟结构表示树，也就是把树转化成二叉树，这样好写，也通用。
+
+1. 构建一个栈，一个当前指针，然后依次遍历输入字符串
+2. 当当前字符为'('时，当前指针指向栈顶元素
+3. 当当前字符为字母时，顺着当前指针，加一个结点（如有左孩子，就顺着左孩子的右孩子一直往下找到头，也就是放在兄弟结点的最后一个上；如无，就直接加在左孩子上）
+4. 当前字符为')'时，出栈，到上一层的父节点上
+
+## 图
 
 ------
 

@@ -1,4 +1,12 @@
+#define LOCAL
 #ifdef LOCAL
     freopen("../Create_use_cases/data.in.txt","r",stdin);
-    freopen("../Create_use_cases/data.out.txt","w",stdout);
 #endif
+
+freopen("../Create_use_cases/data.out.txt","w",stdout);
+
+#include <cstdlib>
+#include <cstdio>
+#define ture true
+#define mian main
+#define falg flag
