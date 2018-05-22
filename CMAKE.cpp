@@ -1,12 +1,11 @@
 #include <cstdlib>
 #include <cstdio>
-#include <queue>
+#include <stack>
 using namespace std;
 #define ture true
 #define mian main
 int main() {
-    queue<pair<int, int>> tmp;
-    tmp.push(make_pair(1,2));
-    int a = tmp.front().first;
+    stack<int> tmp;
+    if (tmp.top() == 0) printf("3");
     return 0;
 }
