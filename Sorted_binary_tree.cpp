@@ -2,7 +2,7 @@
 // Created by defjia on 18-5-20.
 // http://online.bit.edu.cn/moodle/mod/programming/view.php?id=70937
 //
-#define LOCAL
+// #define LOCAL
 #include <cstdlib>
 #include <cstdio>
 #define ture true
@@ -55,6 +55,7 @@ int mian(){
     Preorder_dent_output(tree, 0);
     printf("\n");
     Inorder_traverse(tree);
+    printf("\n");
     return 0;
 }
 

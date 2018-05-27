@@ -30,27 +30,60 @@ void heap_sort(int *arr, int len){
     for(i = len / 2; i > 0; i--){
         max_heapify(arr, i, len);
     }// Initialization
+            /*
     for(i = len; i > 1; i--){
         swap(arr[i], arr[1]);
         max_heapify(arr, 1, i-1);
     }
+             */
 }
-
+int add_elem(int *arr, int len, int elem){
+    arr[++len] = elem;
+    int son = len, dad = len / 2;
+    while (dad >= 1 && arr[son] > arr[dad]){
+        swap(arr[son], arr[dad]);
+        if(dad == 1) break;
+        son = dad;
+        dad = son / 2;
+    }
+    return len;
+}
+int rm_top(int *arr, int len){
+    int i = 1;
+    while (2 * i < len){
+        if(2 * i > 2 * i + 1){
+            arr[i] = arr[2 * i];
+            i = 2 * i;
+        } else{
+            arr[i] = arr[2 * i + 1];
+            i = 2 * i + 1;
+        }
+    }
+    return --len;
+}
+void output(int *arr, int len){
+    for(int i = 1; i <= len; i++) printf("%d ", arr[i]);
+    printf("\n");
+}
 int main(){
-    int n, tmp, hh[MAXSIZE], i = 1, j;
+// #define LOCAL
+#ifdef LOCAL
+    freopen("../Create_use_cases/data.in.txt","r",stdin);
+#endif
+    int n, tmp, hh[MAXSIZE], i = 1, len = 0, j;
     scanf("%d", &n);
     while (n--){
         scanf("%d", &tmp);
         hh[i++] = tmp;
     }
-    heap_sort(hh, i-1);
-    for(j = i-1; j > 0; j--) cout << hh[j] << ' ';
-    cout << "\n";
-    heap_sort(hh, i-2);
-    for(j = i-2; j > 0; j--) cout << hh[j] << ' ';
-    cout << "\n";
-    heap_sort(hh, i-3);
-    for(j = i-3; j > 0; j--) cout << hh[j] << ' ';
-    cout << "\n";
+    len = i-1;
+    heap_sort(hh, len);
+    output(hh, len);
+    hh[1] = hh[len--];
+    heap_sort(hh, len);
+    output(hh, len);
+    hh[1] = hh[len--];
+    heap_sort(hh, len);
+    output(hh, len);
     return 0;
 }
