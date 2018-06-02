@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-// #define LOCAL
+#define LOCAL
 #ifdef LOCAL
     freopen("../Create_use_cases/data.in.txt","r",stdin);
 #endif

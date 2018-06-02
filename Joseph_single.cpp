@@ -1,3 +1,4 @@
+// http://online.bit.edu.cn/moodle/mod/programming/view.php?id=70928
 #include <stdio.h>
 #include <cstdlib>
 
@@ -20,7 +21,7 @@ int main(){
 	int n, k, m;
     NODE *a, *c, *tmp;
     //main current temporary
-    if(scanf("%d,%d,%d", &n, &k, &m) != 3)exit(0);
+    if(scanf("%d,%d,%d", &n, &k, &m) != 3)exit(1);
     if(n < 0 || k < 0 || m < 0){
         printf("n,m,k must bigger than 0.\n");
         return 0;
