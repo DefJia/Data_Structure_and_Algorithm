@@ -11,12 +11,12 @@ a,b,c,d,e,f,g,h,k
 #include <cstring>
 #include <cstdio>
 #include <string>
+#include <queue>
+#include <iostream>
 #define ture true
 #define mian main
 #define falg flag
 #define MAXSIZE 1000
-#include <queue>
-#include <iostream>
 using namespace std;
 struct Edge_node{
     int data, weight;
