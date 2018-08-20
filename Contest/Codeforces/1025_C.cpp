@@ -1,11 +1,8 @@
 //
 // Created by defjia on 18-8-19.
-// I love Rebecca.
 // http://codeforces.com/contest/1025/problem/B
 //
 #include <bits/stdc++.h>
-#define MAX 150000
-#define GREAT 20000
 using namespace std;
 
 int main(){
@@ -59,5 +56,6 @@ int main(){
     } else{
         res = max(max_, front+end);}
     cout << res << endl;
-    return  0;
+    return 0;
 }
+// Defjia loves Rebecca forever.
