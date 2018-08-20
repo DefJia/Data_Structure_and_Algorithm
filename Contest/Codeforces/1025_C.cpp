@@ -1,12 +1,12 @@
 //
 // Created by defjia on 18-8-19.
-// http://codeforces.com/contest/1025/problem/B
+// http://codeforces.com/contest/1025/problem/C
 //
 #include <bits/stdc++.h>
 using namespace std;
 
 int main(){
-#define LOCAL
+//#define LOCAL
 #ifdef LOCAL
     freopen("../Create_use_cases/data.in.txt","r",stdin);
 #endif
@@ -34,19 +34,18 @@ int main(){
     }
     int medium, max_ = 0;
     int i = front;
-    int curr = front;
     while(i < a.length()-end){
         cur = 'a';
         medium = 0;
-        for(int j = i; j < a.length()-end; j++){
-            i++;
+        for(int j = i; j < a.length()-end;){
             if(a[j] != cur) {
                 medium++;
-                cur = a[j];
             } else{
                 break;
             }
+            cur = a[j++];
         }
+        i += medium;
         max_ = max(max_, medium);
     }
     int res;
@@ -54,7 +53,9 @@ int main(){
         res = max(front, end);
         res = max(max_, res);
     } else{
-        res = max(max_, front+end);}
+        res = max(max_, front+end);
+        if (res > a.length()) res /= 2;
+    }
     cout << res << endl;
     return 0;
 }
