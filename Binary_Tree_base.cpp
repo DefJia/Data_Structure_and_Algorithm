@@ -8,7 +8,7 @@
 #include <stack>
 #include <queue>
 #include <iostream>
-#define MAXSIZE 1000
+#define M26AXSIZE 1000
 using namespace std;
 typedef struct node{
 	struct node *left, *right;
