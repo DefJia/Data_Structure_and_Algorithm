@@ -12,7 +12,5 @@ int main(){
 #ifdef LOCAL
     freopen("../Create_use_cases/data.in.txt","r",stdin);
 #endif
-    string a = "ssss";
-    cout << a;
     return 0;
 }
