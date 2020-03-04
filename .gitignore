@@ -2,5 +2,5 @@ cmake-build-debug/
 CMAKE.cpp
 CMakeLists.txt
 .idea/
-Create_use_cases/.idea
+Create_use_cases/.*
 Create_use_cases/data.*
