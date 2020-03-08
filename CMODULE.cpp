@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 #define MAXSIZE 1000
 #define falg flag
@@ -14,3 +15,12 @@ int main(){
 #endif
     return 0;
 }
+
+/*
+  while (cin >> q){
+            l[index++] = q;
+            char ch = getchar();
+            if(ch == '\n')
+                break;
+        }
+ */
