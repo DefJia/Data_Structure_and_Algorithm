@@ -15,12 +15,3 @@ int main(){
 #endif
     return 0;
 }
-
-/*
-  while (cin >> q){
-            l[index++] = q;
-            char ch = getchar();
-            if(ch == '\n')
-                break;
-        }
- */
